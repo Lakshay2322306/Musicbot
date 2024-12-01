@@ -5,7 +5,7 @@ from yt_dlp import YoutubeDL
 
 # Telegram bot token from environment variables
 BOT_TOKEN = os.getenv("7719494597:AAF3_TQ_HbhhbqzDRiv8vtKC1MOkxzmYOkc")
-OWNER_ID = os.getenv("OWNER_ID")  # Owner's Telegram ID
+OWNER_ID = os.getenv("1984816095")  # Owner's Telegram ID
 OWNER_NAME = "@Jukerhenapadega"   # Owner's username
 bot = telebot.TeleBot(BOT_TOKEN)
 
