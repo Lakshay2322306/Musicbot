@@ -17,11 +17,11 @@ def sanitize_filename(name):
     # Remove invalid characters for file systems
     return re.sub(r'[\\/*?:"<>|]', "", name)
 
-# yt-dlp options to download audio without ffmpeg
+# yt-dlp options with cookies file for authentication
 ydl_opts = {
     'format': 'bestaudio/best',  # Best available audio format
     'outtmpl': '%(title)s.%(ext)s',  # Filename template
-    # No postprocessing to avoid ffmpeg
+    'cookiefile': 'cookies.txt',  # Use the cookies file
 }
 
 # Start command
