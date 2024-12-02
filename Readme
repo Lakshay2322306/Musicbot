@@ -1,0 +1,44 @@
+
+# Music Bot for Telegram
+
+This is a simple Telegram bot that allows users to search and download music using `yt-dlp`. It does not require `ffmpeg`, making it lightweight and easy to deploy.
+
+## Features
+- Search and download audio from YouTube.
+- Automatically sends the best available audio format to the user.
+- Lightweight and easy to deploy.
+
+## Deployment Instructions
+
+1. Clone this repository to your server or hosting platform.
+2. Ensure you have Python 3.9+ installed.
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Set the following environment variables:
+   - `BOT_TOKEN`: Your Telegram bot token from [BotFather](https://t.me/BotFather).
+   - `OWNER_ID`: Your Telegram user ID (used for identifying the owner).
+
+5. Run the bot:
+   ```bash
+   python bot.py
+   ```
+
+## Environment Variables
+| Variable   | Description                                              | Example                       |
+|------------|----------------------------------------------------------|-------------------------------|
+| `BOT_TOKEN`| The Telegram bot token provided by BotFather.            | `123456:ABC-DEF1234ghIkl...`  |
+| `OWNER_ID` | The Telegram user ID of the bot owner. Used for logging. | `123456789`                   |
+
+## Hosting on Render
+1. Upload the repository files to a GitHub repository.
+2. Connect the repository to Render and create a new web service.
+3. Set up the environment variables in the Render dashboard under the "Environment" section.
+4. Deploy the service.
+
+## Notes
+- Ensure `yt-dlp` is allowed to fetch data from YouTube.
+- No additional setup for `ffmpeg` is required since audio is downloaded in its native format.
+
+Enjoy your Music Bot! ðŸŽµ
