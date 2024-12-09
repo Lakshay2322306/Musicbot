@@ -1,4 +1,6 @@
-pyTelegramBotAPI==4.9.0
-yt-dlp==2023.10.07
-selenium==4.5.0
-undetected-chromedriver==3.4.6
+pytelegrambotapi==4.17.0
+python-dotenv==1.0.0
+y2mate-api==1.0.6
+requests
+yt-dlp
+pyrogram
