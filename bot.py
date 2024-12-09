@@ -14,7 +14,7 @@ file_size_limit = float(getenv("file-size-limit", 200))
 cache_dir = appdir.user_cache_dir
 
 bot_description = (
-    "► **A FAST & POWERFUL TELEGRAM MUSIC PLAYER BOT WITH SOME AWESOME FEATURES.**\n\n"
+    "► **A FAST & POWERFUL TELEGRAM MUSIC  BOT WITH SOME AWESOME FEATURES.**\n\n"
     "SUPPORTED PLATFORMS:\n"
     "YouTube, SoundCloud, and more!\n\n"
     "Click on the Help button below to get information about my modules and commands.\n\n"
@@ -28,11 +28,11 @@ def create_inline_keyboard():
     )
     keyboard.add(
         types.InlineKeyboardButton("HELP & COMMANDS", callback_data="help"),
-        types.InlineKeyboardButton("DEVELOPER", url="https://t.me/DEVELOPER_USERNAME"),
+        types.InlineKeyboardButton("DEVELOPER", url="@Jukerhenapadega"),
     )
     keyboard.add(
-        types.InlineKeyboardButton("SUPPORT", url="https://t.me/SUPPORT_GROUP"),
-        types.InlineKeyboardButton("CHANNEL", url="https://t.me/CHANNEL_LINK"),
+        types.InlineKeyboardButton("SUPPORT", url="https://t.me/lakshaychats"),
+        types.InlineKeyboardButton("CHANNEL", url="https://t.me/botsforfree55"),
     )
     return keyboard
 
